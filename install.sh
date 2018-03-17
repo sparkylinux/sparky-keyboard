@@ -18,6 +18,7 @@ if [ "$1" = "uninstall" ]; then
 	rm -f /usr/lib/sparkycenter/system/sparky-keyboard.desktop
 	rm -f /usr/share/applications/sparky-keyboard.desktop
 	rm -f /usr/share/menu/sparky-keyboard
+	rm -f /usr/bin/sparky-keyboard
 else
 	if [ ! -d /usr/lib/sparkycenter/system ]; then
 		mkdir -p /usr/lib/sparkycenter/system
@@ -25,4 +26,5 @@ else
 	cp share/sparky-keyboard.desktop /usr/lib/sparkycenter/system/
 	cp share/sparky-keyboard.desktop /usr/share/applications/
 	cp share/sparky-keyboard /usr/share/menu/
+	cp bin/* /usr/bin/
 fi
