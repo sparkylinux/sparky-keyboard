@@ -21,7 +21,7 @@ Dependencies:
 dpkg
 keyboard-configuration
 sparky-remsu
-sparky-xterm
+sparky-xterm (>= 0.2.0)
 
 Install:
 -------------
